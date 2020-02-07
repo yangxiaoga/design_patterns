@@ -11,5 +11,6 @@ public class CloneTest {
 		
 		/** 如果为浅复制则为TRUE，如果为深复制，则为FALSE */
 		System.out.println("originDATE==newDATE?: "+(sheep.getBirthday()==clone.getBirthday()));
+		
 	}
 }
