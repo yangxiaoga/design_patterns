@@ -44,7 +44,7 @@ public class NewLinkedList {
 /*		if (current == null) {
 			throw new RuntimeException("列表为空，无元素");
 		}*/
-		while (temp != 0) {
+		while (temp != 0) {//这里应该判断下标，如果超过一半的size,可以从后往前找
 			current = current.getNext();
 			temp--;
 		}
