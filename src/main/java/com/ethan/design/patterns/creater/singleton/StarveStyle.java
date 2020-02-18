@@ -6,6 +6,8 @@ package com.ethan.design.patterns.creater.singleton;
  * 问题。因此可以省略synchronized关键字
  * 问题：如果只是加载本类，而不是调用getInstance,甚至永远没有调用，则
  * 会造成资源浪费。
+ * 
+ * 饿汉模式的典型实例：Java中的Runtime类
  */
 public class StarveStyle {
 	
