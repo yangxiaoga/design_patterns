@@ -15,8 +15,8 @@ public class Netizen implements Delayed{
 	private long remainTime;//剩余时间
 
 	 /**  
-	 * 比较与旧的时间的大小，
-	 * @param d 旧的对象
+	 * 相互比较排序
+	 * @param d 比较的对象
 	 * @return 比较结果，如果大于则返回1，否则返回0
 	 */
 	public int compareTo(Delayed d) {
@@ -25,7 +25,10 @@ public class Netizen implements Delayed{
 		return result > 0 ? 1: 0;
 	}
 	
-	/** 剩余时间 */
+    /** 
+	 * 剩余时间 
+	 * 是否到了截止时间
+	 */
 	public long getDelay(TimeUnit unit) {
 		return remainTime - System.currentTimeMillis();
 	}
